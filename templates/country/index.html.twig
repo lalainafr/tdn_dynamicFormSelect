@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello CountryController!{% endblock %}
+
+{% block body %}
+<div>
+    <h1>Liste de Pays</h1>
+
+    {% for country in countries %}
+    <ul>
+        <li>
+            {{country.name}}
+        </li>
+    </ul>
+    {% endfor %}
+</div>
+{% endblock %}
